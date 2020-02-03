@@ -1,0 +1,31 @@
+.footer {
+    background-color: #000000;
+    padding: 60px 0 30px 0;
+    @include text-center;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        i {
+            transition: all .2s ease-in-out;
+
+            &:first-of-type {
+                margin-right: 30px;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            &:hover {
+                @include color-white;
+            }
+        }
+    }
+
+    &__copyright {
+        color: #bbbbbb;
+        font-size: 13px;
+
+        margin-bottom: 30px;
+    }
+}

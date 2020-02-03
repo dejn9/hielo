@@ -1,0 +1,42 @@
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 30px;
+    padding: 0 30px;
+
+    &__transparent {
+        background-color: transparent;
+    }
+
+    &__colored {
+        background-color: black;
+    }
+
+
+    &__logo {
+        a {
+            @include color-white;
+        }
+    }
+
+    .hamburger {
+        padding: 15px;
+
+        div {
+            background-color: white;
+            height: 2px;
+            width: 20px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 5px;
+            }
+
+        }
+    }
+
+
+}

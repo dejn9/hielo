@@ -1,0 +1,104 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 20s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../../images/slide01.jpg');
+
+
+    .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.main {
+    width: 100vw;
+    background-color: #f2f2f2;
+    padding: 90px 0 60px 0;
+
+    &__box {
+        max-width: 520px;
+        @include text-center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        background-color: white;
+        padding: 45px;
+    }
+
+    &__btn {
+        padding: 5px 22px;
+        display: inline-block;
+        color: black;
+        background-color: transparent;
+        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15);
+        text-transform: uppercase;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+        &:hover {
+            color: inherit;
+            background-color: #f2f2f2;
+
+        }
+    }
+}
+
+.content {
+    padding: 90px 60px;
+    @include text-center;
+    position: relative;
+    width: 100%;
+    background-image: url('../../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        opacity: .75;
+        z-index: 1;
+    }
+
+}
+
+.photos {
+    width: 100%;
+    background-color: #f2f2f2;
+    @include text-center;
+    padding: 105px 0 70px 0;
+
+    &__box {
+        padding: 18px;
+        background-color: white;
+
+        img {
+            width: 100%;
+            max-width: 625px;
+        }
+    }
+
+}

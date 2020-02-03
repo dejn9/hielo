@@ -1,0 +1,40 @@
+.menu {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    left: -500px;
+    width: 20vw;
+    height: 100vh;
+    padding: 30px 15px;
+    transition: all .8s ease-in-out;
+
+    &:target {
+        transform: translateX(500px);
+        background-color: white;
+        z-index: 5;
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    &__links {
+        li {
+            &:not(:last-of-type) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__x {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    .menu {
+        min-width: 150px;
+        width: 35vw;
+    }
+}

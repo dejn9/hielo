@@ -1,0 +1,25 @@
+@keyframes slideBg {
+    0% {
+        background-image: url('../../images/slide01.jpg');
+    }
+
+    20% {
+        background-image: url('../../images/slide02.jpg');
+    }
+
+    40% {
+        background-image: url('../../images/slide03.jpg');
+    }
+
+    60% {
+        background-image: url('../../images/slide04.jpg');
+    }
+
+    80% {
+        background-image: url('../../images/slide05.jpg');
+    }
+
+    100% {
+        background-image: url('../../images/slide05.jpg');
+    }
+}
