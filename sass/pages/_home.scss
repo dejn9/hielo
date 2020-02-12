@@ -60,7 +60,7 @@
     @include text-center;
     position: relative;
     width: 100%;
-    background-image: url('../../images/bg.jpg');
+    background-image: url('../../images/bg.webp');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -72,12 +72,7 @@
     }
 
     &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+        @include bg-after;
         background-color: rgba(0, 0, 0, 0.95);
         opacity: .75;
         z-index: 1;

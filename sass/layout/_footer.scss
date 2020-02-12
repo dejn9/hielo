@@ -8,7 +8,7 @@
         justify-content: center;
 
         i {
-            transition: all .2s ease-in-out;
+            @include transition-3ms;
 
             &:first-of-type {
                 margin-right: 30px;

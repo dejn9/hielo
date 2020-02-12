@@ -1,16 +1,14 @@
 @keyframes slideBg {
   0% {
-    background-image: url("../../images/slide01.jpg"); }
-  20% {
-    background-image: url("../../images/slide02.jpg"); }
-  40% {
-    background-image: url("../../images/slide03.jpg"); }
-  60% {
-    background-image: url("../../images/slide04.jpg"); }
-  80% {
-    background-image: url("../../images/slide05.jpg"); }
+    background-image: url("/images/slide1.webp"); }
+  25% {
+    background-image: url("/images/slide2.webp"); }
+  50% {
+    background-image: url("/images/slide3.webp"); }
+  75% {
+    background-image: url("/images/slide4.webp"); }
   100% {
-    background-image: url("../../images/slide05.jpg"); } }
+    background-image: url("/images/slide5.webp"); } }
 
 html {
   box-sizing: border-box;
@@ -221,7 +219,7 @@ a:visited {
     display: flex;
     justify-content: center; }
     .footer__list i {
-      transition: all .2s ease-in-out; }
+      transition: all .3s ease-in-out; }
       .footer__list i:first-of-type {
         margin-right: 30px;
         font-size: 30px;
@@ -279,7 +277,7 @@ a:visited {
   text-align: center;
   position: relative;
   width: 100%;
-  background-image: url("../../images/bg.jpg");
+  background-image: url("../../images/bg.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center; }
